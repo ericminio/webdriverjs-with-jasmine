@@ -1,6 +1,6 @@
 A standalone (includes standalone Selenium server (30Mo) + includes Jasmine) working example of a test with WebDriverJS and Jasmine.
 
-This example works with Chrome:
+This example works with Chrome and OSX Lion:
 1. install Chrome
 2. run java -jar -Dwebdriver.chrome.driver=./lib/chromedriver lib/selenium-standalone.jar
 3. open SpecRunner.html in Chrome
