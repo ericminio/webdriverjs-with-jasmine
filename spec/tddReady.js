@@ -4,7 +4,7 @@ describe("Environment", function() {
 		expect( 1 + 2 ).toEqual( 3 );
 	});
 	
-	it("is ready for tdd with webdriverjs", function() {
+		it("is ready for tdd with webdriverjs", function() {
 		var client = new webdriver.http.CorsClient('http://localhost:4444/wd/hub');
 		var executor = new webdriver.http.Executor(client);
 
