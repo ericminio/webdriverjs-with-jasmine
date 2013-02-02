@@ -2,7 +2,11 @@
   "name": "node-example",
   "version": "0.0.1",
   "dependencies": {
-    "node-static": "0.6.7"
+    "node-static": ">= 0.6.7"
+  },
+  "devDependencies": {
+    "zombie": "1.4.x",
+    "jquery": "1.8.3"	
   },
   "engines": {
     "node": "0.8.x",
