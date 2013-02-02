@@ -14,6 +14,9 @@ describe("Prime factors decomposer", function() {
 		expect(primeFactors(4)).toEqual([2, 2]);
 	});
 
+	it("knows that 300 = 2 x 2 x 3 x 5 x 5", function() {
+		expect(primeFactors(300)).toEqual([2, 2, 3, 5, 5]);
+	});
 });
 
 
