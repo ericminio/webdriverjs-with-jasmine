@@ -12,7 +12,7 @@ describe("decomposition", function() {
 				return browser.clickLink("#decompose");
 			}).
 			then(function() {
-				expect(browser.text("#decomposition")).toEqual("2 x 3 x 5");
+				expect(browser.text("#decomposition")).toEqual("30 = 2 x 3 x 5");
 				done();
 			});
 	});		

@@ -4,13 +4,16 @@ var primeFactorsOf = require('../public/js/primeFactors.js');
 
 describe("listener", function(){
 
-	("stores the result of the decomposition in the placeholder", function() {
+	beforeEach(function() {
 		$("<input id=number />").appendTo("body");
 		$("<span id=decomposition ><span>").appendTo("body");
+	});
+
+	it("stores the result of the decomposition in the placeholder", function() {
 		$("#number").val("4");
 		decompose();
 		
-		expect($("#decomposition").text()).toEqual("2 x 2");
+		expect($("#decomposition").text()).toEqual("4 = 2 x 2");
 	});
 
 });

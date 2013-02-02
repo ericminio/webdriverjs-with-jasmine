@@ -1,7 +1,9 @@
 var $ = $ || require('jquery');
 
 decompose = function() {
-	$("#decomposition").text( primeFactorsOf( $("#number").val() ).join(" x ") );
+	var input = $("#number").val();
+	var decomposition = primeFactorsOf( input );
+	$("#decomposition").text( input + " = " + decomposition.join(" x ") );
 }
 
 var module = module || {};

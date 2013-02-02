@@ -27,6 +27,13 @@ describe("index.html", function() {
 			});
 		});
 		
+		it("placeholder shows an example of decomposition", function(done) {
+			browser.visit(home).then(function () {
+		      	expect(browser.text("#decomposition")).toEqual("30 = 2 x 3 x 5");
+				done();
+			});
+		});
+		
 		it("input field is visible", function(done) {
 			browser.visit(home).then(function () {
 		      	expect(browser.query("#number")).toBeDefined();
