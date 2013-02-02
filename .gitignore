@@ -1,4 +1,5 @@
 *.log
 Gemfile.lock
 .bundle
+node_modules
 

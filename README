@@ -1,8 +1,9 @@
-A standalone (includes standalone Selenium server (30Mo) + includes Jasmine) working example of a test with WebDriverJS and Jasmine.
+A standalone working example zombie tests with jasmine-node
 
-This example works with Chrome and OSX Lion:
-. install Chrome
-. in root dir run: rackup
-. in spec dir run: java -jar -Dwebdriver.chrome.driver=./lib/chromedriver lib/selenium-standalone.jar
+This example works on my OSX Lion ;)
+. install heroku toolbelt: https://devcenter.heroku.com/articles/nodejs
+. in root dir run: foreman start
+. in root dir run: jasmine-node test
+. in root dir run: jasmine-node spec
 
-. open SpecRunner.html in Chrome
+should be all green :)

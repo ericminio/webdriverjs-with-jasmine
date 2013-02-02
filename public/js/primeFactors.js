@@ -1,4 +1,4 @@
-function primeFactorsOf(input) {
+primeFactorsOf = function(input) {
 	factors = [];
 	divisor = 2;
 
@@ -12,3 +12,6 @@ function primeFactorsOf(input) {
 
 	return factors;
 }
+
+var module = module || {};
+module.exports = primeFactorsOf;
